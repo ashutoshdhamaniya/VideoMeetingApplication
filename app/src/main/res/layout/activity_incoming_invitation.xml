@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_meeting_invitation"
+    tools:context=".activity.IncomingInvitationActivity">
+
+    <ImageView
+        android:id="@+id/imageMeetingType"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/app_name"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/incomingMeetingInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/incoming_meeting_invitation"
+        android:textAlignment="center"
+        android:includeFontPadding="false"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMeetingType"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textUserNameFirstCharacter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_user_icon"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/a"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ashutosh_dhamaniya"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:includeFontPadding="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/textUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ashutoshdhamaniya_gmail_com"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:includeFontPadding="false"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/meetingInvitationReject"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/meetingInvitationAccept"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_reject"
+        android:padding="15dp"
+        app:tint="@color/colorWhite"
+        android:background="@drawable/meeting_invitation_reject"/>
+
+    <ImageView
+        android:id="@+id/meetingInvitationAccept"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meetingInvitationReject"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_accept"
+        android:padding="15dp"
+        app:tint="@color/colorWhite"
+        android:background="@drawable/meeting_invitation_accept"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

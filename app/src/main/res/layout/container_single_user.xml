@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/userContainer">
+
+    <TextView
+        android:id="@+id/userNameFirstChar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/background_user_icon"
+        android:text="a"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_user_icon"
+        android:contentDescription="@string/app_name"
+        android:padding="3dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_accept"
+        app:layout_constraintStart_toStartOf="@+id/userNameFirstChar"
+        app:layout_constraintBottom_toBottomOf="@id/userNameFirstChar"
+        app:layout_constraintTop_toTopOf="@id/userNameFirstChar"
+        app:layout_constraintEnd_toEndOf="@id/userNameFirstChar"
+        app:tint="@android:color/background_light"/>
+    
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorDivider"
+        app:layout_constraintStart_toEndOf="@id/userNameFirstChar"/>
+
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toEndOf="@id/userNameFirstChar"
+        app:layout_constraintTop_toTopOf="@id/userNameFirstChar"
+        app:layout_constraintBottom_toBottomOf="@id/userNameFirstChar"/>
+
+    <ImageView
+        android:id="@+id/videoCall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/colorPrimary"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:id="@+id/voiceCall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_call"
+        app:layout_constraintEnd_toStartOf="@+id/videoCall"
+        app:layout_constraintBottom_toBottomOf="@id/viewDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="3dp"
+        app:tint="@color/colorPrimary"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/userNameTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/viewSupporter"
+        app:layout_constraintEnd_toStartOf="@id/voiceCall"
+        app:layout_constraintTop_toTopOf="parent"
+        android:includeFontPadding="false"
+        android:text="Ashutosh Dhamaniya"
+        android:textColor="@color/colorBlack"
+        android:ellipsize="end"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/userEmailTextField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="ashutosh@gmail.com"
+        android:textColor="@color/colorBlack"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/viewSupporter"
+        app:layout_constraintEnd_toStartOf="@id/voiceCall"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextField"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

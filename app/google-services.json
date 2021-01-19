@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194178166753",
+    "project_id": "video-meeting-b7477",
+    "storage_bucket": "video-meeting-b7477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194178166753:android:bc2c4c6852382d1c96aca0",
+        "android_client_info": {
+          "package_name": "com.codingfreak.videomeetingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194178166753-p3n6mvvr1g96ooioq2u1h4jn269mi5r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Ojnqw3GnUYLxatuCIPDTmRTVdbvqxao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194178166753-p3n6mvvr1g96ooioq2u1h4jn269mi5r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
